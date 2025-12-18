@@ -12,7 +12,7 @@
  */
 
 //load external lib dynamically bc is a LGPL licence, which means our framework must work without this library also. This means if the user doesn't have this library installed or if he removes it, our code still needs to work.
-$phpmailer_path = __DIR__ . "/vendor/phpmailer/vendor/autoload.php";
+$phpmailer_path = dirname(__DIR__) . "/vendor/phpmailer/vendor/autoload.php";
 
 if (file_exists($phpmailer_path))
 	include_once $phpmailer_path;

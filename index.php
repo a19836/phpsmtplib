@@ -53,7 +53,7 @@ p {margin:0 0 20px; text-align:center;}
 	<h5>Simple Usage</h5>
 	<div class="code short">
 		<textarea readonly>
-include __DIR__ . "/SmtpEmail.php";
+include __DIR__ . "/lib/SmtpEmail.php";
 
 $SmtpEmail = new SmtpEmail($smtp_host, $smtp_port, $smtp_user, $smtp_pass, "ssl");
 $status = $SmtpEmail->send($from_email, $from_name, $reply_to_email, $reply_to_name, $to_email, $to_name, $subject, $message);
@@ -67,7 +67,7 @@ echo $status ? "OK" : $SmtpEmail->getErrorInfo();
 	<h5>Complete Usage</h5>
 	<div class="code">
 		<textarea readonly>
-include __DIR__ . "/SmtpEmail.php";
+include __DIR__ . "/lib/SmtpEmail.php";
 
 $validated_to_email = SmtpEmail::getEmail($to_email);
 

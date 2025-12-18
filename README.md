@@ -31,7 +31,7 @@ To see a working example, open [index.php](index.php) on your server.
 ### Simple Usage
 
 ```php
-include __DIR__ . "/SmtpEmail.php";
+include __DIR__ . "/lib/SmtpEmail.php";
 
 $SmtpEmail = new SmtpEmail($smtp_host, $smtp_port, $smtp_user, $smtp_pass, "ssl");
 $status = $SmtpEmail->send($from_email, $from_name, $reply_to_email, $reply_to_name, $to_email, $to_name, $subject, $message);
@@ -42,7 +42,7 @@ echo $status ? "OK" : $SmtpEmail->getErrorInfo();
 ### Complete Usage
 
 ```php
-include __DIR__ . "/SmtpEmail.php";
+include __DIR__ . "/lib/SmtpEmail.php";
 
 $validated_to_email = SmtpEmail::getEmail($to_email);
 
