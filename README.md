@@ -1,7 +1,7 @@
 # PHP SMTP Lib
 
 > Original Repos:   
-> - PHP SSH Lib: https://github.com/a19836/phpsmtplib/   
+> - PHP SSH Lib: https://github.com/a19836/php-smtp-lib/   
 > - Bloxtor: https://github.com/a19836/bloxtor/
 
 ## Overview
